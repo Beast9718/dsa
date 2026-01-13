@@ -18,5 +18,4 @@ int main()
     int result=arrangeCoins(n);
     cout<<result;
 
-
 }
