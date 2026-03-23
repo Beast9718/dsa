@@ -8,6 +8,6 @@ public:
             else
                 output -= 1;
         }
-       return abs(output);
+        return abs(output);
     }
 };
