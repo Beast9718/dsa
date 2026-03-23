@@ -5,12 +5,9 @@ public:
         for (int i = 0; i < s.length(); i++) {
             if (s[i] == 'a')
                 output += 1;
-            if (s[i] == 'b')
+            else
                 output -= 1;
         }
-        if (output > 0)
-            return output;
-        else
-            return -output;
+       return abs(output);
     }
 };
