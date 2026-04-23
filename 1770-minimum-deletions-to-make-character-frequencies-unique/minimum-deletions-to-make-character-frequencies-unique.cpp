@@ -12,7 +12,7 @@ public:
                 cnt--;
                 ans++;
             }
-            used.insert(cnt);
+            if(cnt>0)used.insert(cnt);
         }
         return ans;
         
