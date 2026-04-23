@@ -6,7 +6,7 @@ public:
             freq[c]++;
         }
         int ans = 0;
-        unordered_set<int> used;
+        set<int> used;
         for (auto& [ch, cnt] : freq) {
             while (cnt > 0 && used.count(cnt)) {
                 cnt--;
