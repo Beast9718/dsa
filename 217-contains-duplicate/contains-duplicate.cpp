@@ -6,12 +6,10 @@ public:
         for (int x : nums) {
             freq[x]++;
         }
-        vector<pair<int, int>> v(freq.begin(), freq.end());
-        sort(v.begin(), v.end(),
-             [](auto& a, auto& b) { return a.second > b.second; });
-        if (v[0].second > 1)
-            return true;
-        else
+        for(auto &[num,count]:freq){
+            if(count>1)return true;
+        }
+       
             return false;
     }
 };
