@@ -4,12 +4,11 @@ public:
     bool containsDuplicate(vector<int>& nums) {
         unordered_map<int, int> freq;
         for (int x : nums) {
-            freq[x]++;
+            if(freq[x]==0)freq[x]++;
+            else return true;
+            
         }
-        for(auto &[num,count]:freq){
-            if(count>1)return true;
-        }
+        return false;
        
-            return false;
     }
 };
