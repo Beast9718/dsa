@@ -8,9 +8,9 @@ public:
         while (studentindex < g.size() && cookieindex < s.size()) {
             if (  s[cookieindex] >= g[studentindex]) {
                 studentindex++;
-               
+                cookieindex++;
             } 
-            cookieindex++;
+            else cookieindex++;
             
         }
         return studentindex;
